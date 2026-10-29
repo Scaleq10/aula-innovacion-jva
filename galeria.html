@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Aula de Innovación</title>
+
+  <!-- Tipografías: Space Grotesk para títulos, Inter para texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos propios: se cargan DESPUÉS de Bootstrap para personalizarlo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVEGACIÓN (Navbar de Bootstrap) ===== -->
+  <nav class="navbar navbar-expand-md sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand navbar-marca" href="index.html">
+        <img src="img/insignia.png" class="logo" alt="Insignia de la I.E. 20854 Gral. Juan Velasco Alvarado">
+        <span>Aula de Innovación</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="secciones.html">Misión y Visión</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html" aria-current="page">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero hero--interna" style="background-image: url('img/5.jpeg');">
+    <div class="container">
+      <div class="hero-contenido">
+        <span class="tag tag--dorado">Vida en el aula</span>
+        <h1>Galería del Aula de Innovación</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="container">
+
+      <!-- Nota: .galeria usa columnas CSS (efecto "masonry"); al hacer clic en una foto
+           se abre el Modal de Bootstrap con la imagen ampliada -->
+      <div class="galeria">
+
+        <figure>
+          <button type="button" class="galeria-btn" data-bs-toggle="modal" data-bs-target="#modalFoto"
+                  data-img="img/2.jpeg" data-alt="Vista del aula de cómputo con las computadoras instaladas" data-titulo="Estaciones de trabajo del aula" aria-label="Ampliar foto: Estaciones de trabajo del aula">
+            <img src="img/2.jpeg" alt="Vista del aula de cómputo con las computadoras instaladas">
+          </button>
+          <figcaption>Estaciones de trabajo del aula</figcaption>
+        </figure>
+
+        <figure>
+          <button type="button" class="galeria-btn" data-bs-toggle="modal" data-bs-target="#modalFoto"
+                  data-img="img/gral-juan-velasco-alvarado.jpg" data-alt="Fachada principal de la institución educativa" data-titulo="Fachada de la I.E. 20854" aria-label="Ampliar foto: Fachada de la I.E. 20854">
+            <img src="img/gral-juan-velasco-alvarado.jpg" alt="Fachada principal de la institución educativa">
+          </button>
+          <figcaption>Fachada de la I.E. 20854</figcaption>
+        </figure>
+
+        <figure>
+          <button type="button" class="galeria-btn" data-bs-toggle="modal" data-bs-target="#modalFoto"
+                  data-img="img/1.jpeg" data-alt="Entrada del Aula de Innovación decorada con banderines" data-titulo="Entrada del aula" aria-label="Ampliar foto: Entrada del aula">
+            <img src="img/1.jpeg" alt="Entrada del Aula de Innovación decorada con banderines">
+          </button>
+          <figcaption>Entrada del aula</figcaption>
+        </figure>
+
+        <figure>
+          <button type="button" class="galeria-btn" data-bs-toggle="modal" data-bs-target="#modalFoto"
+                  data-img="img/3.jpeg" data-alt="Escritorio con monitor identificado como PC-13" data-titulo="Equipo PC-13 en mantenimiento" aria-label="Ampliar foto: Equipo PC-13 en mantenimiento">
+            <img src="img/3.jpeg" alt="Escritorio con monitor identificado como PC-13">
+          </button>
+          <figcaption>Equipo PC-13 en mantenimiento</figcaption>
+        </figure>
+
+        <figure>
+          <button type="button" class="galeria-btn" data-bs-toggle="modal" data-bs-target="#modalFoto"
+                  data-img="img/6.jpeg" data-alt="Estudiantes trabajando en las computadoras junto a la pizarra digital IQTouch" data-titulo="Nueva pizarra digital IQTouch" aria-label="Ampliar foto: Nueva pizarra digital IQTouch">
+            <img src="img/6.jpeg" alt="Estudiantes trabajando en las computadoras junto a la pizarra digital IQTouch">
+          </button>
+          <figcaption>Nueva pizarra digital IQTouch</figcaption>
+        </figure>
+
+        <figure>
+          <button type="button" class="galeria-btn" data-bs-toggle="modal" data-bs-target="#modalFoto"
+                  data-img="img/4.jpeg" data-alt="Fila de computadoras conectadas a lo largo del aula" data-titulo="Fila de equipos numerados" aria-label="Ampliar foto: Fila de equipos numerados">
+            <img src="img/4.jpeg" alt="Fila de computadoras conectadas a lo largo del aula">
+          </button>
+          <figcaption>Fila de equipos numerados</figcaption>
+        </figure>
+
+        <figure>
+          <button type="button" class="galeria-btn" data-bs-toggle="modal" data-bs-target="#modalFoto"
+                  data-img="img/aulainnovacionfachada.jpeg" data-alt="Vista lateral de la fachada del aula pintada de azul" data-titulo="Fachada del Aula de Innovación" aria-label="Ampliar foto: Fachada del Aula de Innovación">
+            <img src="img/aulainnovacionfachada.jpeg" alt="Vista lateral de la fachada del aula pintada de azul">
+          </button>
+          <figcaption>Fachada del Aula de Innovación</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Aula de Innovación Pedagógica</strong></p>
+      <p>I.E. 20854 "Gral. Juan Velasco Alvarado" — Santa Elena, Barranca</p>
+      <p>&copy; 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===== MODAL DE FOTO (visor de la galería) ===== -->
+  <div class="modal fade" id="modalFoto" tabindex="-1" aria-labelledby="modalFotoTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalFotoTitulo"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img id="modalFotoImg" class="img-fluid w-100" src="" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (incluye Popper) y script propio -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

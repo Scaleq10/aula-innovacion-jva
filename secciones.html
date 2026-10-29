@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misión y Visión - Aula de Innovación</title>
+
+  <!-- Tipografías: Space Grotesk para títulos, Inter para texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos propios: se cargan DESPUÉS de Bootstrap para personalizarlo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVEGACIÓN (Navbar de Bootstrap) ===== -->
+  <nav class="navbar navbar-expand-md sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand navbar-marca" href="index.html">
+        <img src="img/insignia.png" class="logo" alt="Insignia de la I.E. 20854 Gral. Juan Velasco Alvarado">
+        <span>Aula de Innovación</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="secciones.html" aria-current="page">Misión y Visión</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="equipos.html">Equipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero hero--interna" style="background-image: url('img/aulainnovacionfachada.jpeg');">
+    <div class="container">
+      <div class="hero-contenido">
+        <span class="tag tag--dorado">Nuestra identidad</span>
+        <h1>Misión, Visión y Valores</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="seccion">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Misión -->
+        <div class="col-md-4">
+          <div class="card tarjeta tarjeta-valor h-100">
+            <div class="card-body">
+              <h4>&#127919; Misión</h4>
+              <p>
+                Formar estudiantes con un alto potencial académico y humano,
+                desarrollando aprendizajes significativos y capacidades que les
+                permitan desenvolverse como líderes competitivos y éticos en su comunidad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visión -->
+        <div class="col-md-4">
+          <div class="card tarjeta tarjeta-valor h-100">
+            <div class="card-body">
+              <h4>&#128064; Visión</h4>
+              <p>
+                Consolidarse como una institución educativa líder en la región,
+                abierta a la modernidad y a la tecnología, destacando por la excelencia
+                académica y la formación de ciudadanos de bien.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Valores -->
+        <div class="col-md-4">
+          <div class="card tarjeta tarjeta-valor h-100">
+            <div class="card-body">
+              <h4>&#11088; Valores</h4>
+              <ul>
+                <li>&#128218; Disciplina</li>
+                <li>&#128170; Perseverancia</li>
+                <li>&#129309; Trabajo en equipo</li>
+                <li>&#127775; Compañerismo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Aula de Innovación Pedagógica</strong></p>
+      <p>I.E. 20854 "Gral. Juan Velasco Alvarado" — Santa Elena, Barranca</p>
+      <p>&copy; 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (incluye Popper) y script propio -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
